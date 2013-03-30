@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9899E7BF1706AF310036E2D2 /* BNGarageApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E7BE1706AF310036E2D2 /* BNGarageApiClient.m */; };
+		9899E7D11706B4E10036E2D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9899E7D31706B4E10036E2D2 /* Localizable.strings */; };
+		98E32D771706AD740060430E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E32D761706AD740060430E /* UIKit.framework */; };
+		98E32D791706AD740060430E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E32D781706AD740060430E /* Foundation.framework */; };
+		98E32D7B1706AD740060430E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E32D7A1706AD740060430E /* CoreGraphics.framework */; };
+		98E32D831706AD740060430E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E32D821706AD740060430E /* main.m */; };
+		98E32D871706AD740060430E /* BNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E32D861706AD740060430E /* BNAppDelegate.m */; };
+		98E32D891706AD740060430E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E32D881706AD740060430E /* Default.png */; };
+		98E32D8B1706AD740060430E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E32D8A1706AD740060430E /* Default@2x.png */; };
+		98E32D8D1706AD740060430E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E32D8C1706AD740060430E /* Default-568h@2x.png */; };
+		98E32D901706AD740060430E /* BNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E32D8F1706AD740060430E /* BNViewController.m */; };
+		98E32D931706AD740060430E /* BNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E32D911706AD740060430E /* BNViewController.xib */; };
+		98E32D9D1706AE990060430E /* Button-Off.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E32D991706AE990060430E /* Button-Off.png */; };
+		98E32D9E1706AE990060430E /* Button-Off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E32D9A1706AE990060430E /* Button-Off@2x.png */; };
+		98E32D9F1706AE990060430E /* Button-On.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E32D9B1706AE990060430E /* Button-On.png */; };
+		98E32DA01706AE990060430E /* Button-On@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E32D9C1706AE990060430E /* Button-On@2x.png */; };
+		D40EFFA0D3D34D5B949CC1E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF2A7A8F1B146D2B1606690 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7BF2A7A8F1B146D2B1606690 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9899E7BD1706AF310036E2D2 /* BNGarageApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNGarageApiClient.h; sourceTree = "<group>"; };
+		9899E7BE1706AF310036E2D2 /* BNGarageApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNGarageApiClient.m; sourceTree = "<group>"; };
+		9899E7D21706B4E10036E2D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98E32D731706AD740060430E /* Garage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E32D761706AD740060430E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		98E32D781706AD740060430E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		98E32D7A1706AD740060430E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		98E32D7E1706AD740060430E /* Garage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Garage-Info.plist"; sourceTree = "<group>"; };
+		98E32D821706AD740060430E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98E32D841706AD740060430E /* Garage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Garage-Prefix.pch"; sourceTree = "<group>"; };
+		98E32D851706AD740060430E /* BNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNAppDelegate.h; sourceTree = "<group>"; };
+		98E32D861706AD740060430E /* BNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNAppDelegate.m; sourceTree = "<group>"; };
+		98E32D881706AD740060430E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		98E32D8A1706AD740060430E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		98E32D8C1706AD740060430E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		98E32D8E1706AD740060430E /* BNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNViewController.h; sourceTree = "<group>"; };
+		98E32D8F1706AD740060430E /* BNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNViewController.m; sourceTree = "<group>"; };
+		98E32D921706AD740060430E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BNViewController.xib; sourceTree = "<group>"; };
+		98E32D991706AE990060430E /* Button-Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-Off.png"; sourceTree = "<group>"; };
+		98E32D9A1706AE990060430E /* Button-Off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-Off@2x.png"; sourceTree = "<group>"; };
+		98E32D9B1706AE990060430E /* Button-On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-On.png"; sourceTree = "<group>"; };
+		98E32D9C1706AE990060430E /* Button-On@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-On@2x.png"; sourceTree = "<group>"; };
+		D04C591F0A0D4B5B8086D6C4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98E32D701706AD740060430E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E32D771706AD740060430E /* UIKit.framework in Frameworks */,
+				98E32D791706AD740060430E /* Foundation.framework in Frameworks */,
+				98E32D7B1706AD740060430E /* CoreGraphics.framework in Frameworks */,
+				D40EFFA0D3D34D5B949CC1E2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98E32D6A1706AD740060430E = {
+			isa = PBXGroup;
+			children = (
+				98E32D7C1706AD740060430E /* Garage */,
+				98E32D751706AD740060430E /* Frameworks */,
+				98E32D741706AD740060430E /* Products */,
+				D04C591F0A0D4B5B8086D6C4 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		98E32D741706AD740060430E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98E32D731706AD740060430E /* Garage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98E32D751706AD740060430E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98E32D761706AD740060430E /* UIKit.framework */,
+				98E32D781706AD740060430E /* Foundation.framework */,
+				98E32D7A1706AD740060430E /* CoreGraphics.framework */,
+				7BF2A7A8F1B146D2B1606690 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98E32D7C1706AD740060430E /* Garage */ = {
+			isa = PBXGroup;
+			children = (
+				98E32D851706AD740060430E /* BNAppDelegate.h */,
+				98E32D861706AD740060430E /* BNAppDelegate.m */,
+				98E32D8E1706AD740060430E /* BNViewController.h */,
+				98E32D8F1706AD740060430E /* BNViewController.m */,
+				98E32D911706AD740060430E /* BNViewController.xib */,
+				98E32D7D1706AD740060430E /* Supporting Files */,
+				9899E7BD1706AF310036E2D2 /* BNGarageApiClient.h */,
+				9899E7BE1706AF310036E2D2 /* BNGarageApiClient.m */,
+			);
+			path = Garage;
+			sourceTree = "<group>";
+		};
+		98E32D7D1706AD740060430E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98E32D991706AE990060430E /* Button-Off.png */,
+				98E32D9A1706AE990060430E /* Button-Off@2x.png */,
+				98E32D9B1706AE990060430E /* Button-On.png */,
+				98E32D9C1706AE990060430E /* Button-On@2x.png */,
+				98E32D7E1706AD740060430E /* Garage-Info.plist */,
+				98E32D821706AD740060430E /* main.m */,
+				98E32D841706AD740060430E /* Garage-Prefix.pch */,
+				98E32D881706AD740060430E /* Default.png */,
+				98E32D8A1706AD740060430E /* Default@2x.png */,
+				98E32D8C1706AD740060430E /* Default-568h@2x.png */,
+				9899E7D31706B4E10036E2D2 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98E32D721706AD740060430E /* Garage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98E32D961706AD740060430E /* Build configuration list for PBXNativeTarget "Garage" */;
+			buildPhases = (
+				98E32D6F1706AD740060430E /* Sources */,
+				98E32D701706AD740060430E /* Frameworks */,
+				98E32D711706AD740060430E /* Resources */,
+				4896A80AB25D42C0BDC9A153 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Garage;
+			productName = Garage;
+			productReference = 98E32D731706AD740060430E /* Garage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98E32D6B1706AD740060430E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BN;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "It's Brent";
+			};
+			buildConfigurationList = 98E32D6E1706AD740060430E /* Build configuration list for PBXProject "Garage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 98E32D6A1706AD740060430E;
+			productRefGroup = 98E32D741706AD740060430E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98E32D721706AD740060430E /* Garage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98E32D711706AD740060430E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E32D891706AD740060430E /* Default.png in Resources */,
+				98E32D8B1706AD740060430E /* Default@2x.png in Resources */,
+				98E32D8D1706AD740060430E /* Default-568h@2x.png in Resources */,
+				98E32D931706AD740060430E /* BNViewController.xib in Resources */,
+				98E32D9D1706AE990060430E /* Button-Off.png in Resources */,
+				98E32D9E1706AE990060430E /* Button-Off@2x.png in Resources */,
+				98E32D9F1706AE990060430E /* Button-On.png in Resources */,
+				98E32DA01706AE990060430E /* Button-On@2x.png in Resources */,
+				9899E7D11706B4E10036E2D2 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4896A80AB25D42C0BDC9A153 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98E32D6F1706AD740060430E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E32D831706AD740060430E /* main.m in Sources */,
+				98E32D871706AD740060430E /* BNAppDelegate.m in Sources */,
+				98E32D901706AD740060430E /* BNViewController.m in Sources */,
+				9899E7BF1706AF310036E2D2 /* BNGarageApiClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9899E7D31706B4E10036E2D2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9899E7D21706B4E10036E2D2 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		98E32D911706AD740060430E /* BNViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98E32D921706AD740060430E /* en */,
+			);
+			name = BNViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98E32D941706AD740060430E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98E32D951706AD740060430E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98E32D971706AD740060430E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D04C591F0A0D4B5B8086D6C4 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Garage/Garage-Prefix.pch";
+				INFOPLIST_FILE = "Garage/Garage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		98E32D981706AD740060430E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D04C591F0A0D4B5B8086D6C4 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Garage/Garage-Prefix.pch";
+				INFOPLIST_FILE = "Garage/Garage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98E32D6E1706AD740060430E /* Build configuration list for PBXProject "Garage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E32D941706AD740060430E /* Debug */,
+				98E32D951706AD740060430E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98E32D961706AD740060430E /* Build configuration list for PBXNativeTarget "Garage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E32D971706AD740060430E /* Debug */,
+				98E32D981706AD740060430E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98E32D6B1706AD740060430E /* Project object */;
+}
