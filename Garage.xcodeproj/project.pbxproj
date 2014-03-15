@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9835B88D171E33B1004EA865 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9835B88B171E33B1004EA865 /* Icon.png */; };
+		9835B88E171E33B1004EA865 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9835B88C171E33B1004EA865 /* Icon@2x.png */; };
+		9835B890171E33BC004EA865 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9835B88F171E33BC004EA865 /* Icon.png */; };
+		9835B892171E33C1004EA865 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9835B891171E33C1004EA865 /* Icon@2x.png */; };
 		9899E7BF1706AF310036E2D2 /* BNGarageApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E7BE1706AF310036E2D2 /* BNGarageApiClient.m */; };
 		9899E7D11706B4E10036E2D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9899E7D31706B4E10036E2D2 /* Localizable.strings */; };
 		98E32D771706AD740060430E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E32D761706AD740060430E /* UIKit.framework */; };
@@ -28,9 +32,13 @@
 
 /* Begin PBXFileReference section */
 		7BF2A7A8F1B146D2B1606690 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9835B88B171E33B1004EA865 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9835B88C171E33B1004EA865 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		9835B88F171E33BC004EA865 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9835B891171E33C1004EA865 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		9899E7BD1706AF310036E2D2 /* BNGarageApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNGarageApiClient.h; sourceTree = "<group>"; };
 		9899E7BE1706AF310036E2D2 /* BNGarageApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNGarageApiClient.m; sourceTree = "<group>"; };
-		9899E7D21706B4E10036E2D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9899E7D21706B4E10036E2D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98E32D731706AD740060430E /* Garage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E32D761706AD740060430E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		98E32D781706AD740060430E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +79,8 @@
 		98E32D6A1706AD740060430E = {
 			isa = PBXGroup;
 			children = (
+				9835B891171E33C1004EA865 /* Icon@2x.png */,
+				9835B88F171E33BC004EA865 /* Icon.png */,
 				98E32D7C1706AD740060430E /* Garage */,
 				98E32D751706AD740060430E /* Frameworks */,
 				98E32D741706AD740060430E /* Products */,
@@ -115,6 +125,8 @@
 		98E32D7D1706AD740060430E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9835B88B171E33B1004EA865 /* Icon.png */,
+				9835B88C171E33B1004EA865 /* Icon@2x.png */,
 				98E32D991706AE990060430E /* Button-Off.png */,
 				98E32D9A1706AE990060430E /* Button-Off@2x.png */,
 				98E32D9B1706AE990060430E /* Button-On.png */,
@@ -192,6 +204,10 @@
 				98E32D9F1706AE990060430E /* Button-On.png in Resources */,
 				98E32DA01706AE990060430E /* Button-On@2x.png in Resources */,
 				9899E7D11706B4E10036E2D2 /* Localizable.strings in Resources */,
+				9835B88D171E33B1004EA865 /* Icon.png in Resources */,
+				9835B88E171E33B1004EA865 /* Icon@2x.png in Resources */,
+				9835B890171E33BC004EA865 /* Icon.png in Resources */,
+				9835B892171E33C1004EA865 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +275,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -274,6 +291,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -289,6 +308,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -297,6 +317,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -306,10 +328,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D04C591F0A0D4B5B8086D6C4 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Garage/Garage-Prefix.pch";
 				INFOPLIST_FILE = "Garage/Garage-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -318,10 +344,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D04C591F0A0D4B5B8086D6C4 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Garage/Garage-Prefix.pch";
 				INFOPLIST_FILE = "Garage/Garage-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
