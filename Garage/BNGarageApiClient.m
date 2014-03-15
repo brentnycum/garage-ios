@@ -12,6 +12,8 @@ NSString * const BNGarageApiHostURL = @"http://172.28.1.132/";
 
 @implementation BNGarageApiClient
 
+#pragma mark - Singleton
+
 +(BNGarageApiClient *)sharedClient {
     static BNGarageApiClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
@@ -22,6 +24,7 @@ NSString * const BNGarageApiHostURL = @"http://172.28.1.132/";
     return _sharedClient;
 }
 
+#pragma mark - BNGarageApiClient
 
 -(void)switchLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
     [self postPath:@"/api/garage/left" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -45,6 +48,18 @@ NSString * const BNGarageApiHostURL = @"http://172.28.1.132/";
             failure(error);
         }
     }];
+}
+
+- (void)switchBothGaragesWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
+	[self postPath:@"/api/garage/both" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+		if (success) {
+			success(responseObject);
+		}
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+		if (failure) {
+			failure(error);
+		}
+	}];
 }
 
 @end

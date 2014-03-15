@@ -17,4 +17,6 @@ extern NSString * const BNGarageApiHostURL;
 -(void)switchLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 -(void)switchRightGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 
+- (void)switchBothGaragesWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
+
 @end
