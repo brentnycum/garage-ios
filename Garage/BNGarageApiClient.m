@@ -23,7 +23,7 @@ NSString * const BNGarageApiHostURL = @"http://172.28.1.132/";
 }
 
 
--(void)openLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
+-(void)switchLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
     [self postPath:@"/api/garage/left" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (success) {
             success(responseObject);
@@ -35,7 +35,7 @@ NSString * const BNGarageApiHostURL = @"http://172.28.1.132/";
     }];
 }
 
--(void)openRightGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
+-(void)switchRightGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
     [self postPath:@"/api/garage/right" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (success) {
             success(responseObject);

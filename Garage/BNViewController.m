@@ -55,7 +55,7 @@
 }
 
 -(void)openLeftGarage:(id)sender {
-    [[BNGarageApiClient sharedClient] openLeftGarageWithSuccess:^(id responseObject) {
+    [[BNGarageApiClient sharedClient] switchLeftGarageWithSuccess:^(id responseObject) {
         
     } failure:^(NSError *error) {
         NSLog(@"Error: %@", [error localizedDescription]);
@@ -63,7 +63,7 @@
 }
 
 -(void)openRightGarage:(id)sender {
-    [[BNGarageApiClient sharedClient] openRightGarageWithSuccess:^(id responseObject) {
+    [[BNGarageApiClient sharedClient] switchRightGarageWithSuccess:^(id responseObject) {
         
     } failure:^(NSError *error) {
         NSLog(@"Error: %@", [error localizedDescription]);
