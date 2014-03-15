@@ -12,11 +12,15 @@
 
 @implementation BNAppDelegate
 
+#pragma mark - NSObject
+
 - (void)dealloc {
 	[_window release];
 	[_viewController release];
 	[super dealloc];
 }
+
+#pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
