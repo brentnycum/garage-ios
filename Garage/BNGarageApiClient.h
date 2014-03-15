@@ -12,10 +12,10 @@ extern NSString * const BNGarageApiHostURL;
 
 @interface BNGarageApiClient : AFHTTPClient
 
-+(BNGarageApiClient *)sharedClient;
++ (BNGarageApiClient *)sharedClient;
 
--(void)switchLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
--(void)switchRightGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
+- (void)switchLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
+- (void)switchRightGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 
 - (void)switchBothGaragesWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 

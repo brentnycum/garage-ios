@@ -14,40 +14,40 @@ NSString * const BNGarageApiHostURL = @"http://172.28.1.132/";
 
 #pragma mark - Singleton
 
-+(BNGarageApiClient *)sharedClient {
-    static BNGarageApiClient *_sharedClient = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _sharedClient = [[BNGarageApiClient alloc] initWithBaseURL:[NSURL URLWithString:BNGarageApiHostURL]];
-    });
-    
-    return _sharedClient;
++ (BNGarageApiClient *)sharedClient {
+	static BNGarageApiClient *_sharedClient = nil;
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		_sharedClient = [[BNGarageApiClient alloc] initWithBaseURL:[NSURL URLWithString:BNGarageApiHostURL]];
+	});
+
+	return _sharedClient;
 }
 
 #pragma mark - BNGarageApiClient
 
--(void)switchLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
-    [self postPath:@"/api/garage/left" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (success) {
-            success(responseObject);
-        }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
+- (void)switchLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
+	[self postPath:@"/api/garage/left" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+		if (success) {
+			success(responseObject);
+		}
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+		if (failure) {
+			failure(error);
+		}
+	}];
 }
 
--(void)switchRightGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
-    [self postPath:@"/api/garage/right" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (success) {
-            success(responseObject);
-        }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
+- (void)switchRightGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
+	[self postPath:@"/api/garage/right" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+		if (success) {
+			success(responseObject);
+		}
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+		if (failure) {
+			failure(error);
+		}
+	}];
 }
 
 - (void)switchBothGaragesWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
