@@ -5,5 +5,5 @@
   Created by Brent Nycum on 3/30/13.
   Copyright (c) 2013 It's Brent. All rights reserved.
 */
-"Left Garage" = "Open Left Garage";
-"Right Garage" = "Open Right Garage";
+"Left Garage" = "Left Garage";
+"Right Garage" = "Right Garage";
