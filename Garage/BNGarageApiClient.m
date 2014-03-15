@@ -8,7 +8,7 @@
 
 #import "BNGarageApiClient.h"
 
-static NSString * const kAFAppDotNetAPIBaseURLString = @"https://172.28.1.132/";
+static NSString * const kAFAppDotNetAPIBaseURLString = @"http://172.28.1.132/";
 
 @implementation BNGarageApiClient
 
