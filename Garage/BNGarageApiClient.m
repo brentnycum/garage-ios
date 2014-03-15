@@ -8,7 +8,7 @@
 
 #import "BNGarageApiClient.h"
 
-static NSString * const kAFAppDotNetAPIBaseURLString = @"http://172.28.1.132/";
+NSString * const BNGarageApiHostURL = @"http://172.28.1.132/";
 
 @implementation BNGarageApiClient
 
@@ -16,7 +16,7 @@ static NSString * const kAFAppDotNetAPIBaseURLString = @"http://172.28.1.132/";
     static BNGarageApiClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[BNGarageApiClient alloc] initWithBaseURL:[NSURL URLWithString:kAFAppDotNetAPIBaseURLString]];
+        _sharedClient = [[BNGarageApiClient alloc] initWithBaseURL:[NSURL URLWithString:BNGarageApiHostURL]];
     });
     
     return _sharedClient;

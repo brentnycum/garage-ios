@@ -8,6 +8,8 @@
 
 #import <AFNetworking/AFNetworking.h>
 
+extern NSString * const BNGarageApiHostURL;
+
 @interface BNGarageApiClient : AFHTTPClient
 
 +(BNGarageApiClient *)sharedClient;
