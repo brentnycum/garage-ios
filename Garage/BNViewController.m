@@ -19,6 +19,8 @@
 
 @implementation BNViewController
 
+#pragma mark - UIViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -53,6 +55,8 @@
     
     [self.view addSubview:button];
 }
+
+#pragma mark - BNViewController
 
 -(void)openLeftGarage:(id)sender {
     [[BNGarageApiClient sharedClient] switchLeftGarageWithSuccess:^(id responseObject) {
