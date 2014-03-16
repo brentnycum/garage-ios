@@ -26,6 +26,18 @@ NSString * const BNGarageApiHostURL = @"http://172.28.1.132/";
 
 #pragma mark - BNGarageApiClient
 
+- (void)ping:(void (^)())success failure:(void (^)(NSError *error))failure {
+	[self getPath:@"/api/ping" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+		if (success) {
+			success();
+		}
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+		if (failure) {
+			failure(error);
+		}
+	}];
+}
+
 - (void)switchLeftGarageWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure {
 	[self postPath:@"/api/garage/left" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
 		if (success) {

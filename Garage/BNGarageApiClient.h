@@ -20,6 +20,14 @@ extern NSString * const BNGarageApiHostURL;
 + (BNGarageApiClient *)sharedClient;
 
 /**
+ *  Ping service to make sure it's alive.
+ *
+ *  @param success success block
+ *  @param failure failure block
+ */
+- (void)ping:(void (^)())success failure:(void (^)(NSError *error))failure;
+
+/**
  *  Switch the left garage door.
  *
  *  @param success success block
